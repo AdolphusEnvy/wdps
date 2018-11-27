@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 time python3 starter-code.py <(hdfs dfs -cat hdfs:///user/bbkruit/sample.warc.gz | zcat) > sample_predictions.tsv
 

@@ -25,6 +25,7 @@ def split_records(stream):
 if __name__ == '__main__':
     import sys
     try:
+        print(sys.argv)
         _, INPUT = sys.argv
     except Exception as e:
         print('Usage: python starter-code.py INPUT')
@@ -34,5 +35,6 @@ if __name__ == '__main__':
 
     with open(INPUT, errors='ignore') as fo:
         for record in split_records(fo):
+            print(record)
             for key, label, freebase_id in find_labels(record, cheats):
                 print(key + '\t' + label + '\t' + freebase_id)

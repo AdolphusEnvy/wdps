@@ -8,7 +8,7 @@ def sparql(domain, query):
             response = response.json()
             print(response)
         except Exception as e:
-            print(reponse)
+            print(response)
             raise e
 
 if __name__ == '__main__':
